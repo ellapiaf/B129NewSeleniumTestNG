@@ -35,6 +35,7 @@ public class ExcelUtils {
     public int rowCount(){
         return  sheet.getLastRowNum();
     }
+
     //Exceldeki sütun sayisini return eder
     public int columnCount(){
         return sheet.getRow(0).getLastCellNum();
