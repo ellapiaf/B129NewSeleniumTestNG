@@ -31,6 +31,7 @@ public class C02_BlueRentalExcelTest1 {
         BlueRentalPage blueRentalPage = new BlueRentalPage();
         blueRentalPage.login.click();//login buttonuna tıklar
         blueRentalPage.email.sendKeys(email, Keys.TAB,password,Keys.ENTER);
+
         //Excel'den aldığımız verileri sendKeys() methodu ile gönderdik
 
         //Login oldugumuzu dogrulyalım.

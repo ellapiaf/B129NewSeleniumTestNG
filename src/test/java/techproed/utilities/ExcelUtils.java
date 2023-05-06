@@ -18,6 +18,7 @@ public class ExcelUtils {
     //Constuctor: Excel path'ine ve Excel'deki sayfaya ulaşmak için 2 parametreli cons. oluşturduk
     public ExcelUtils(String path,String sheetName){
         this.path = path;
+
         try {
             FileInputStream fis = new FileInputStream(path);
             workbook = WorkbookFactory.create(fis);
@@ -35,6 +36,10 @@ public class ExcelUtils {
     public int rowCount(){
         return  sheet.getLastRowNum();
     }
+
+
+
+
 
     //Exceldeki sütun sayisini return eder
     public int columnCount(){

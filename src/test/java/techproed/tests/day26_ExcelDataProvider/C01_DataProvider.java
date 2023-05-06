@@ -12,7 +12,8 @@ public class C01_DataProvider {
 
     @DataProvider
     public static Object[][] kullanicilar() {
-        return new Object[][]{{ConfigReader.getProperty("email1"),ConfigReader.getProperty("password1")},{ConfigReader.getProperty("email2"),ConfigReader.getProperty("password2"),}};
+        return new Object[][]{{ConfigReader.getProperty("email1"),ConfigReader.getProperty("password1")},{ConfigReader.getProperty("email2"),ConfigReader.getProperty("password2")},
+                {ConfigReader.getProperty("email3")},{ConfigReader.getProperty("password3")}};
     }
 
     @Test(dataProvider = "kullanicilar")
